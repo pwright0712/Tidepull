@@ -1,0 +1,27 @@
+# ── Python dependencies ────────────────────────────────────────────────────
+# ffmpeg, ffprobe, chromium, deno and a running keyring are NOT pip packages.
+# See the "system packages" block at the bottom.
+
+# yt-dlp itself. The [default] extra is required, not optional: it pulls
+# yt-dlp-ejs, without which every YouTube format list collapses to storyboards
+# ("Only images are available for download").
+# Dev/nightly builds need `pip install -r requirements.txt --pre`.
+yt-dlp[default]>=2026.10.21
+
+# GUI image handling: thumbnail fetch, resize, and ImageTk.
+Pillow>=11.3
+
+# Thumbnail download.
+requests>=2.32.2
+
+# Linux only: decrypts Chromium cookie values through libsecret. Without it a
+# "logged in" session silently behaves as guest.
+secretstorage>=3.3.3; sys_platform == "linux"
+
+# ── pulled in transitively by yt-dlp[default], listed for clarity ──────────
+# yt-dlp-ejs   EJS challenge solver scripts (version must match yt-dlp)
+# brotli       Content-Encoding: br responses
+# websockets   live chat / websocket downloads
+# mutagen      metadata embedding
+# pycryptodomex  AES for fragment decryption
+# certifi, urllib3, charset_normalizer, idna  (requests chain)
