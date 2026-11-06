@@ -81,3 +81,5 @@ and never uploaded anywhere.
 Not implemented. If you want it, omit the profile argument in `_auth_opts` so
 yt-dlp reads the browser's default profile, and keep the browser closed during
 downloads. The trade-off is that logout can no longer just delete the profile.
+
+Discord Contact Username: nukeexplosion1925
