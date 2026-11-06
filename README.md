@@ -19,6 +19,15 @@ Browser for sign-in | Edge (preinstalled) or Chrome
 
 Tested Successfully on Python 3.12 and Python 3.15
 
+## Download
+
+**Windows (64-bit):** [Download Tidepull-win64.zip](https://github.com/pwright0712/Tidepull/releases/tag/v1.0.0)
+
+1. Download the zip and **extract it** — do not run the exe from inside the archive. PyInstaller's one-folder build needs `_internal\` sitting next to `Tidepull.exe`.
+2. Run `Tidepull.exe` from the extracted folder.
+
+Requires Windows 10 or 11, 64-bit, and an internet connection. See [Sign in with your browser](#sign-in-with-your-browser) for the optional Google login flow.
+
 ## Signing in
 
 Only needed for age-restricted, members-only, private or region-locked videos or authentication related issues. Guest downloads work without it.
